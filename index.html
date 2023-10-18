@@ -16,14 +16,15 @@
     <!-- page container -->
     <div class="container-fluid vh=100">
       <div class="row">
+        
         <!-- column one -->
-
-        <div class="col-12 col-md-4 col-lg-4 column-one">
-          <!-- welcome with ghost icon -->
+ <div class="col-12 col-md-4 col-lg-4 column-one">
+         
+  <!-- welcome with ghost icon -->
           <div class="welcome text-center text-light pt-4">
             <h4>Welcome</h4>
 
-            <i
+           <i
               class="fa-solid fa-ghost fa-2xl d-block mt-5 mb-4"
               style="color: #f0f2f5"
             ></i>
@@ -117,9 +118,50 @@
               <a class="nav-link active" aria-current="page" href="#">Drafts</a>
               <a class="nav-link" href="#">Spam</a>
               <a class="nav-link" href="#">Trash</a>
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="" aria-controls="offcanvasExample">
+                ...
+              </a>
             </div>
           </nav>
         </div>
+
+
+        <!-- off canvas menu -->
+
+        
+          
+        
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasExampleLabel">
+              <i
+              class="fa-solid fa-ghost fa-2xl d-block mt-5 mb-4"
+              style="color: #4e4f51"
+            ></i>
+
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              mail
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Primary</a></li>
+                <li><a class="dropdown-item" href="#">Social</a></li>
+                <li><a class="dropdown-item" href="#">Starred</a></li>
+                <li><a class="dropdown-item" href="#">Snoozed</a></li>
+                <li><a class="dropdown-item" href="#">Promotions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
 
         <!-- column two list of recent emails-->
 
@@ -206,8 +248,41 @@
                 rows="3"
               ></textarea>
             </div>
-            <!-- reply button -->
-            <button class="btn btn-outline-dark" type="submit">Reply</button>
+
+
+
+      
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Reply
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Your message was sent!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+     
+        <i
+        class="fa-solid fa-ghost fa-2xl d-block mt-5 mb-4"
+        style="color: #737a84"
+      ></i>  
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+            <!-- reply button
+            <button class="btn btn-outline-dark" type="submit">Reply</button> -->
           </div>
         </div>
       </div>
