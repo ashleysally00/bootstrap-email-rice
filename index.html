@@ -102,7 +102,8 @@
           </div>
 
           <!-- list of folders -->
-          <nav class="navbar d-flex text-light">
+       
+          <nav class="navbar d-flex text-light ">
             <div
               class="container-fluid d-flex flex-column justify-content-evenly"
             >
@@ -124,7 +125,7 @@
             </div>
           </nav>
         </div>
-
+      
 
         <!-- off canvas menu -->
 
@@ -163,11 +164,12 @@
         </div>
         
 
-        <!-- column two list of recent emails-->
+        <!-- column two recent emails in list with search-->
 
-        <div class="col-sm-12 mt-3 col-md-8 col-lg-4 column-two">
+        <div class="col-sm-12  mt-3 col-md-8  col-lg-4  column-two ">
           <div class="input-group d-flex">
             <div class="form-outline d-flex align-items-center">
+            
               <!-- search box and button -->
 
               <div class="container-fluid d-flex mb-3">
@@ -186,18 +188,20 @@
             </div>
           </div>
 
+          <!--  email messages -->
+
           <div class="list-group m-b-4">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action"
-              aria-current="true"
-            >
+
+            <!-- true is to select and highlight one message-->
+
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1 inbox-titles pb-4">PW Next Site </h5>
                 <small>5:23pm</small>
               </div>
-              <p class="mb-1 email-body">Thanks for signing up! Please check your inbox to confirm your email address.</p>
+            <p class="mb-1 email-body">Thanks for signing up! Please check your inbox to confirm your email address.</p>
             </a>
+            
             <a href="#" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1 inbox-titles pb-4 ">TreeCompanyNews</h5>
@@ -212,13 +216,13 @@
               </div>
               <p class="mb-1 email-body">
                 In this new game you will write the...
-              </p>
-              
-            </a>
+              </p> 
+               </a>
           </div>
+          
         </div>
 
-        <!--column three email-->
+        <!--column three opened email to read-->
 
         <div class="col-sm-12 col-m-12 col-lg-4 column-three">
           <div class="mb-3 mt-3">
@@ -230,11 +234,11 @@
                     Updates
                     <small class="text-muted"
                       >zimstar233@startmail.com </small>
-                  </p><p class="email-body">The store will be closing for inventory on the 5th while we update backlogs. Please remember to check your messages to stay informed. Let me know if you have questions. have a great week! <br><br><br>Zeke</p>
-                </p></label
-              >
+                  </p><p class="email-body">The store will be closing for inventory on the 5th while we update backlogs. Please remember to check your messages to stay informed. Let me know if you have questions. Have a great week! <br><br><br>Zeke</p>
+                </p></label>
 
-              <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> -->
+                <!-- text area for writing email to send -->
+
             </div>
             <div class="mb-3">
               <label
@@ -242,14 +246,13 @@
                 class="form-label"
               ></label>
               <textarea
-                class="form-control"
-                placeholder="Write your message here..."
+                class="form-control" style="font-size: .86rem;" overflow-auto zeke-email-text" style= "height:100px";
+                placeholder=
+                "Hello, Zeke! Hope things are going well there. I was going to ask you what days of the week work best for inventory reduction sessions. The boxes arrived yesterday and we are working on a plan for a schedule. Would love to hear your thoughts when you get a chance to reply. Hope your week is great, and thanks!"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
             </div>
-
-
 
       
 <!-- Button trigger modal -->
@@ -299,6 +302,12 @@
     <script src="myscripts.js"></script>
   </body>
 </html>
+
+
+
+
+
+
 
 
 
