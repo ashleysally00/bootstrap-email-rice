@@ -8,5 +8,22 @@ body {
 }
 
 .modal-text {
-  font-size: 10px;
+  font-size: 8px;
+  font-style: bold;
 }
+.rounded-pill {
+  background: rgb(233, 84, 129);
+  outline: 1px solid pink;
+}
+
+.email-body {
+  font-size: 12px;
+}
+
+.inbox-titles {
+  font-size: 16px;
+}
+
+
+
+
