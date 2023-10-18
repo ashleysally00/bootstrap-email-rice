@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+}
+
+.column-one,
+.navbar {
+  background-color: gray;
+}
+
+.modal-text {
+  font-size: 10px;
+}
