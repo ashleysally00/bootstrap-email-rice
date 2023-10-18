@@ -20,8 +20,8 @@
         <!-- column one -->
  <div class="col-12 col-md-4 col-lg-4 column-one">
          
-  <!-- welcome with ghost icon -->
-          <div class="welcome text-center text-light pt-4">
+  <!-- welcome message and ghost icon -->
+          <div class="welcome text-center text-light p-md-5">
             <h4>Welcome</h4>
 
            <i
@@ -29,11 +29,11 @@
               style="color: #f0f2f5"
             ></i>
 
-            <!-- compose email button with modal -->
+            <!-- compose email button that pops out modal so you can write a message-->
 
             <button
               type="button"
-              class="btn btn-light mb-4"
+              class="btn btn-light m-3"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               data-bs-whatever="zimstar233@startmail.com"
@@ -101,14 +101,14 @@
             </div>
           </div>
 
-          <!-- list of folders -->
+          <!-- links to folders in menu on gray -->
        
           <nav class="navbar d-flex text-light ">
             <div
-              class="container-fluid d-flex flex-column justify-content-evenly"
+              class="container-fluid d-flex flex-column justify-content-evenly fs-4"
             >
               <a class="nav-link pt-1 position-relative">
-                Inbox
+                Your Inbox
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
                 >
@@ -120,18 +120,15 @@
               <a class="nav-link" href="#">Spam</a>
               <a class="nav-link" href="#">Trash</a>
               <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="" aria-controls="offcanvasExample">
-                ...
+                more...
               </a>
             </div>
           </nav>
         </div>
       
 
-        <!-- off canvas menu -->
+        <!-- off canvas menu with more folder links-->
 
-        
-          
-        
         
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
@@ -164,7 +161,7 @@
         </div>
         
 
-        <!-- column two recent emails in list with search-->
+        <!-- column two recent emails in list and ability to search them-->
 
         <div class="col-sm-12  mt-3 col-md-8  col-lg-4  column-two ">
           <div class="input-group d-flex">
@@ -172,17 +169,17 @@
             
               <!-- search box and button -->
 
-              <div class="container-fluid d-flex mb-3">
+              <div class="container-fluid d-flex mb-3 gx-0">
                 <input
                   type="“search”"
-                  class="form-control"
-                  id="“search”"
+                  class="form-control m-0
+                  id="“search”
                   placeholder="Search"
                 />
                 <label class="“form-label”" for="“search”"></label>
               </div>
 
-              <button type="button" class="btn btn-secondary mb-3">
+              <button type="button" class="btn btn-secondary mb-3" >
                 <i class="fas fa-search"></i>
               </button>
             </div>
@@ -195,29 +192,48 @@
             <!-- true is to select and highlight one message-->
 
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-              <div class="d-flex w-100 justify-content-between">
+              <div class="d-flex w-100 justify-content-between p-3">
                 <h5 class="mb-1 inbox-titles pb-4">PW Next Site </h5>
                 <small>5:23pm</small>
               </div>
-            <p class="mb-1 email-body">Thanks for signing up! Please check your inbox to confirm your email address.</p>
+            <p class="mb-1 email-body p-3">Thanks for signing up! Please check your inbox to confirm your email address.</p>
             </a>
             
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
+              <div class="d-flex w-100 justify-content-between p-3">
                 <h5 class="mb-1 inbox-titles pb-4 ">TreeCompanyNews</h5>
                 <small class="text-muted">11:34am</small>
               </div>
-              <p class="mb-1 email-body">Great news! Tree Company is starting a new season tomorrow.</p>
+               <p class="mb-1 email-body p-3">Great news! Tree Company is starting a new season tomorrow.</p>
               </a>
+
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1 inbox-titles pb-4">Google Alerts - Interactive Fiction</h5>
+              <div class="d-flex w-100 justify-content-between p-3">
+                <h5 class="mb-1 inbox-titles">Google Alerts - Interactive Fiction</h5>
                 <small class="text-muted">7:11am</small>
               </div>
-              <p class="mb-1 email-body">
+              <p class="mb-1 email-body p-3">
                 In this new game you will write the...
               </p> 
                </a>
+
+               <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between p-3">
+                  <h5 class="mb-1 inbox-titles pb-4 ">TreeCompanyNews</h5>
+                  <small class="text-muted">11:34am</small>
+                </div>
+                 <p class="mb-1 email-body p-3">Great news! Tree Company is starting a new season tomorrow.</p>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between p-3">
+                    <h5 class="mb-1 inbox-titles pb-4">TreeCompanyNews</h5>
+                    <small class="text-muted">11:34am</small>
+                  </div>
+                   <p class="mb-1 email-body p-3">Great news! Tree Company is starting a new season tomorrow.</p>
+                  </a>
+
+
           </div>
           
         </div>
@@ -227,7 +243,7 @@
         <div class="col-sm-12 col-m-12 col-lg-4 column-three">
           <div class="mb-3 mt-3">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
+              <label for="exampleFormControlInput1" class="form-label p-5"
                 ><p>
                    Zeke Barns<br />
                   <p class="modal-text">
@@ -243,10 +259,10 @@
             <div class="mb-3">
               <label
                 for="exampleFormControlTextarea1"
-                class="form-label"
+                class="form-label "
               ></label>
               <textarea
-                class="form-control" style="font-size: .86rem;" overflow-auto zeke-email-text" style= "height:100px";
+                class="form-control p-5" style="font-size: .86rem;" overflow-auto zeke-email-text" style= "height:100px";
                 placeholder=
                 "Hello, Zeke! Hope things are going well there. I was going to ask you what days of the week work best for inventory reduction sessions. The boxes arrived yesterday and we are working on a plan for a schedule. Would love to hear your thoughts when you get a chance to reply. Hope your week is great, and thanks!"
                 id="exampleFormControlTextarea1"
@@ -255,12 +271,14 @@
             </div>
 
       
-<!-- Button trigger modal -->
+<!-- reply button with your email was sent modal message --> 
+
 <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Reply
 </button>
 
-<!-- Modal -->
+<!-- modal with ghost icon and close -->
+
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -284,8 +302,7 @@
     </div>
   </div>
 </div>
-            <!-- reply button
-            <button class="btn btn-outline-dark" type="submit">Reply</button> -->
+          
           </div>
         </div>
       </div>
@@ -302,6 +319,7 @@
     <script src="myscripts.js"></script>
   </body>
 </html>
+
 
 
 
